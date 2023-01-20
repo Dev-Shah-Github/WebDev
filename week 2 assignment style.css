@@ -1,0 +1,90 @@
+*{
+    box-sizing:border-box;
+    font-family:'Trebuchet MS', sans-serif;
+}
+h1{
+    text-align: center;
+}
+#div1, #div2, #div3{
+    border:2px solid;
+    margin: 1.5%;
+    background-color: antiquewhite;
+}
+p{
+    padding:0px 15px 0px 15px;
+    text-align: justify;
+}
+h3{
+    width:25%;
+    text-align: center;
+    border:2px solid;
+    position: relative;
+    left:75%;
+    margin:0px;
+    padding: 4px;
+}
+#subheading1{
+    background-color: rgba(225, 126, 34, 0.918);
+}
+#subheading2{
+    background-color: rgb(255, 244, 90);
+}
+#subheading3{
+    background-color: rgb(235, 44, 44);
+}
+#maindiv{
+    border:1px solid;
+    border-radius: 10px;
+}
+
+@media (min-width:992px) {
+    .col_lg_3{
+        width:30%;
+        float: left;
+        margin: 1.5%;
+    }
+    #div4{
+        clear: left;
+        border: none;
+    }
+    .row{
+        width: 90%;
+        margin:auto;
+    }
+    h3{
+        width:25%;
+        text-align: center;
+        border:2px solid;
+        position: relative;
+        left:75%;
+        margin:0px;
+        padding: 4px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    #div1, #div2{
+        width: 47%;
+        float: left;
+    }
+    #div3{
+        clear: left;
+    }
+    #div4{
+        clear: left;
+        border: none;
+    }
+    .row{
+        width: 90%;
+        margin:auto;
+    }
+    h3{
+        width:25%;
+        text-align: center;
+        border:2px solid;
+        position: relative;
+        left:75%;
+        margin:0px;
+        padding: 4px;
+    }
+}
