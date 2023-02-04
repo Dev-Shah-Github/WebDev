@@ -6,7 +6,7 @@ h1{
     text-align: center;
 }
 #div1, #div2, #div3{
-    border:1px solid black;
+    border:1px solid;
     margin: 1.5%;
     background-color: antiquewhite;
 }
