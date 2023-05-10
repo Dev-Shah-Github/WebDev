@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Circles</title>
+    <style>
+        body{
+            box-sizing: border-box;
+            background-color: aliceblue;
+        }
+        ::-webkit-scrollbar{
+            width: 0px;
+            visibility: hidden;
+        }
+      .outtermost_div {
+        margin: auto;
+        width: 1100px;
+        height: 1100px;
+      }
+      .innermost_div {
+        height: 70px;
+        width: 70px;
+      }
+      img{
+        width:115px;
+        border-radius: 50%;
+      }
+      div{
+        background-color:aliceblue;
+        display: grid;
+        place-content: center;
+        /* border: 1px solid; */
+        padding: 80px;
+        border-radius: 50%;
+      }
+      #div1,img{
+        animation-name:d1;
+        animation-delay: 0s;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+      #div2{
+        animation-name:d2;
+        animation-delay: 0.5s;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+      #div3{
+        animation-name:d3;
+        animation-delay: 1.5s;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+      #div4{
+        animation-name:d4;
+        animation-delay: 2s;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+      #div5{
+        animation-name:d5;
+        animation-delay: 2.5s;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+      #div6{
+        animation-name:d5;
+        animation-delay: 3s;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+      #div7{
+        animation-name:d5;
+        animation-delay: 3.5s;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+      @keyframes d1 {
+        0%{
+            box-shadow:inset 0px 0px 50px black;
+        }
+        10%{
+            box-shadow:inset 0px 0px 40px black;
+        }
+        20%{
+            box-shadow:inset 0px 0px 30px black;
+        }
+        30%{
+            box-shadow:inset 0px 0px 20px black;
+        }
+        40%{
+            box-shadow:inset 0px 0px 10px black;
+        }
+        50%{
+            box-shadow: 0px 0px 0px black ,inset 0px 0px 3px rgb(175, 174, 174);
+
+        }
+        60%{
+            box-shadow: 0px 0px 10px black;
+        }
+        70%{
+            box-shadow: 0px 0px 20px black;
+        }
+        80%{
+            box-shadow: 0px 0px 30px black;
+        }
+        90%{
+            box-shadow: 0px 0px 40px black;
+        }
+        100%{
+            box-shadow: 0px 0px 50px black;
+        }
+        
+      }
+      @keyframes d2 {
+        0%{
+            box-shadow:inset 0px 0px 50px black;
+        }
+        10%{
+            box-shadow:inset 0px 0px 40px black;
+        }
+        20%{
+            box-shadow:inset 0px 0px 30px black;
+        }
+        30%{
+            box-shadow:inset 0px 0px 20px black;
+        }
+        40%{
+            box-shadow:inset 0px 0px 10px black;
+        }
+        50%{
+            box-shadow: 0px 0px 0px black ,inset 0px 0px 3px rgb(175, 174, 174);
+
+        }
+        60%{
+            box-shadow: 0px 0px 10px black;
+        }
+        70%{
+            box-shadow: 0px 0px 20px black;
+        }
+        80%{
+            box-shadow: 0px 0px 30px black;
+        }
+        90%{
+            box-shadow: 0px 0px 40px black;
+        }
+        100%{
+            box-shadow: 0px 0px 50px black;
+        }
+        
+      }
+      @keyframes d3 {
+        0%{
+            box-shadow:inset 0px 0px 50px black;
+        }
+        10%{
+            box-shadow:inset 0px 0px 40px black;
+        }
+        20%{
+            box-shadow:inset 0px 0px 30px black;
+        }
+        30%{
+            box-shadow:inset 0px 0px 20px black;
+        }
+        40%{
+            box-shadow:inset 0px 0px 10px black;
+        }
+        50%{
+            box-shadow: 0px 0px 0px black ,inset 0px 0px 3px rgb(175, 174, 174);
+
+        }
+        60%{
+            box-shadow: 0px 0px 10px black;
+        }
+        70%{
+            box-shadow: 0px 0px 20px black;
+        }
+        80%{
+            box-shadow: 0px 0px 30px black;
+        }
+        90%{
+            box-shadow: 0px 0px 40px black;
+        }
+        100%{
+            box-shadow: 0px 0px 50px black;
+        }
+        
+      }
+      @keyframes d4 {
+        0%{
+            box-shadow:inset 0px 0px 50px black;
+        }
+        10%{
+            box-shadow:inset 0px 0px 40px black;
+        }
+        20%{
+            box-shadow:inset 0px 0px 30px black;
+        }
+        30%{
+            box-shadow:inset 0px 0px 20px black;
+        }
+        40%{
+            box-shadow:inset 0px 0px 10px black;
+        }
+        50%{
+            box-shadow: 0px 0px 0px black ,inset 0px 0px 3px rgb(175, 174, 174);
+
+        }
+        60%{
+            box-shadow: 0px 0px 10px black;
+        }
+        70%{
+            box-shadow: 0px 0px 20px black;
+        }
+        80%{
+            box-shadow: 0px 0px 30px black;
+        }
+        90%{
+            box-shadow: 0px 0px 40px black;
+        }
+        100%{
+            box-shadow: 0px 0px 50px black;
+        }
+        
+      }
+      @keyframes d5 {
+        0%{
+            box-shadow:inset 0px 0px 50px black;
+        }
+        10%{
+            box-shadow:inset 0px 0px 40px black;
+        }
+        20%{
+            box-shadow:inset 0px 0px 30px black;
+        }
+        30%{
+            box-shadow:inset 0px 0px 20px black;
+        }
+        40%{
+            box-shadow:inset 0px 0px 10px black;
+        }
+        50%{
+            box-shadow: 0px 0px 0px black ,inset 0px 0px 3px rgb(175, 174, 174);
+
+        }
+        60%{
+            box-shadow: 0px 0px 10px black;
+        }
+        70%{
+            box-shadow: 0px 0px 20px black;
+        }
+        80%{
+            box-shadow: 0px 0px 30px black;
+        }
+        90%{
+            box-shadow: 0px 0px 40px black;
+        }
+        100%{
+            box-shadow: 0px 0px 50px black;
+        }
+        
+      }
+      @keyframes d6 {
+        0%{
+            box-shadow:inset 0px 0px 50px black;
+        }
+        10%{
+            box-shadow:inset 0px 0px 40px black;
+        }
+        20%{
+            box-shadow:inset 0px 0px 30px black;
+        }
+        30%{
+            box-shadow:inset 0px 0px 20px black;
+        }
+        40%{
+            box-shadow:inset 0px 0px 10px black;
+        }
+        50%{
+            box-shadow: 0px 0px 0px black ,inset 0px 0px 3px rgb(175, 174, 174);
+
+        }
+        60%{
+            box-shadow: 0px 0px 10px black;
+        }
+        70%{
+            box-shadow: 0px 0px 20px black;
+        }
+        80%{
+            box-shadow: 0px 0px 30px black;
+        }
+        90%{
+            box-shadow: 0px 0px 40px black;
+        }
+        100%{
+            box-shadow: 0px 0px 50px black;
+        }
+        
+      }
+      @keyframes d7 {
+        0%{
+            box-shadow:inset 0px 0px 50px black;
+        }
+        10%{
+            box-shadow:inset 0px 0px 40px black;
+        }
+        20%{
+            box-shadow:inset 0px 0px 30px black;
+        }
+        30%{
+            box-shadow:inset 0px 0px 20px black;
+        }
+        40%{
+            box-shadow:inset 0px 0px 10px black;
+        }
+        50%{
+            box-shadow: 0px 0px 0px black ,inset 0px 0px 3px rgb(175, 174, 174);
+
+        }
+        60%{
+            box-shadow: 0px 0px 10px black;
+        }
+        70%{
+            box-shadow: 0px 0px 20px black;
+        }
+        80%{
+            box-shadow: 0px 0px 30px black;
+        }
+        90%{
+            box-shadow: 0px 0px 40px black;
+        }
+        100%{
+            box-shadow: 0px 0px 50px black;
+        }
+        
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="div8" class="outtermost_div">
+        <div id="div7">
+            <div id="div6">
+                <div id="div5">
+                    <div id="div4">
+                        <div id="div3">
+                            <div id="div2">
+                                <div id="div1" class="innermost_div"><img src="propic.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
