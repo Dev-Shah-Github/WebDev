@@ -1,0 +1,113 @@
+body{
+    box-sizing: border-box;
+    background-color: rgb(39, 39, 39);
+    
+}
+:root{
+    --w :350px;
+    --h :calc(var(--w));
+    --c : 12%;
+    --handwidth : 140px;
+    --handheight : 4.5px;
+
+    --hourStartDEG : 0deg;
+    --minuteStartDEG : 0deg;
+    --secondStartDEG : 0deg;
+    --hourEndDEG : calc(var(--hourStartDEG) + 360deg);
+    --minuteEndDEG : calc(var(--minuteStartDEG) + 360deg);
+    --secondEndDEG : calc(var(--secondStartDEG) + 360deg);
+}
+#clockMainDiv{
+    padding: 5px;
+    margin: auto auto;
+    border-radius: 4px;
+}
+#clockOuterCircle{
+    width: var(--w);
+    height: var(--h);
+    margin: var(--c) auto;
+    padding: 9px;
+    border-radius: 50%;
+    background:conic-gradient(#e600ff 0deg,rgb(0, 170, 255),#e600ff,rgb(0, 170, 255),#e600ff);
+    box-shadow: 0px 0px 10px 10px black;
+}
+#clockInnerCircle{
+    height: var(--h);
+    width:var(--w);
+    border-radius: 50%;
+    background: rgb(39, 39, 39);
+}
+#hourHand,#minuteHand,#secondHand{
+    height: var(--handheight);
+    margin: auto;
+    border-radius: 5px;
+    /* border: 0.5px solid rgb(0, 0, 0); */
+    box-shadow: 0px 0px 5px black;
+}
+#hourHandDiv,#minuteHandDiv,#secondHandDiv{
+    position: relative;
+    width: 100%;
+}
+#hourHandDiv{
+    animation-name: HHANI;
+    animation-duration: 43200s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    top:50%;
+    z-index: 3;
+}
+#minuteHandDiv{
+    animation-name: HMANI;
+    animation-duration: 3600s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    top:48.5%;
+    z-index: 2;
+}
+#secondHandDiv{
+    animation-name: HSANI;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    top:47%;
+    z-index: 1;
+}
+#hourHand{
+    margin-left: 20%;
+    width: 30%;
+    background-color: aqua;
+}
+#minuteHand{
+    margin-left: 12.5%;
+    width: 37.5%;
+    background-color: rgb(0, 149, 255);
+}
+#secondHand{
+    margin-left: 5%;
+    width: 45%;
+    background-color: rgb(174, 0, 255);
+}
+@keyframes HHANI{
+    0%{
+        rotate:var(--hourStartDEG);
+    }
+    100%{
+        rotate: var(--hourEndDEG);
+    }
+}
+@keyframes HMANI {
+    0%{
+        rotate: var(--minuteStartDEG);
+    }
+    100%{
+        rotate: var(--minuteEndDEG);
+    }
+}
+@keyframes HSANI {
+    0%{
+        rotate: var(--secondStartDEG);
+    }
+    100%{
+        rotate: var(--secondEndDEG);
+    }
+}
